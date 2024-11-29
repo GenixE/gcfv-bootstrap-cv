@@ -1,0 +1,471 @@
+:root {
+  --primary: #00B87B;
+  --secondary: #314355;
+  --light: #F2F2F2;
+  --dark: #2C3E50;
+}
+
+#spinner {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .5s ease-out, visibility 0s linear .5s;
+  z-index: 99999;
+}
+
+#spinner.show {
+  transition: opacity .5s ease-out, visibility 0s linear 0s;
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 991.98px) {
+  .sticky-lg-top.vh-100 {
+    height: 100% !important;
+  }
+}
+
+.hamburger-menu {
+  position: absolute;
+  top: 0;
+  margin: 1rem;
+  right: 0; /* Default to right for mobile */
+}
+
+@media (min-width: 992px) { /* Adjust for larger screens */
+  .hamburger-menu {
+    left: 0;
+    right: auto;
+  }
+}
+
+.fw-semi-bold {
+  font-weight: 600;
+}
+
+.fw-medium {
+  font-weight: 500;
+}
+
+.btn-square {
+  width: 40px;
+  height: 40px;
+}
+
+.btn-sm-square {
+  width: 30px;
+  height: 30px;
+}
+
+.btn-lg-square {
+  width: 50px;
+  height: 50px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn.btn-primary {
+  color: #FFFFFF;
+}
+
+.typed-cursor {
+  font-size: 25px;
+  color: var(--light);
+}
+
+.back-to-top {
+  position: fixed;
+  display: none;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 1;
+  font-size: 30px;
+  right: 30px;
+  bottom: 30px;
+  transition: background 0.5s;
+  z-index: 11;
+}
+
+.back-to-top i {
+  color: var(--primary);
+}
+
+.back-to-top i:hover {
+  color: var(--dark);
+}
+
+.back-to-top {
+  -webkit-animation: action 1s infinite alternate;
+  animation: action 1s infinite alternate;
+}
+
+@-webkit-keyframes action {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes action {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
+.title {
+  position: relative;
+}
+
+.title::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  bottom: -4px;
+  left: 0;
+  border: 2px solid var(--light);
+  border-radius: 10px;
+}
+
+.title::after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 2px;
+  bottom: 0;
+  left: 15px;
+  border-radius: 2px;
+  background: var(--light);
+}
+
+.progress {
+  height: 5px;
+}
+
+.progress .progress-bar {
+  width: 0px;
+  transition: 2s;
+}
+
+.service-item {
+  padding: 30px;
+  text-align: center;
+  background: var(--secondary);
+}
+
+.service-item i {
+  width: 75px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--light);
+  color: var(--primary);
+  transition: .5s;
+}
+
+.service-item:hover i {
+  background: var(--primary);
+  color: var(--light);
+}
+
+.portfolio-item .portfolio-btn {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  font-size: 90px;
+  background: rgba(44, 62, 80, .9);
+  opacity: 0;
+  transition: .5s;
+}
+
+.portfolio-item:hover .portfolio-btn {
+  opacity: 1;
+  width: calc(100% - 60px);
+  height: calc(100% - 60px);
+  top: 30px;
+  left: 30px;
+}
+
+.portfolio-item i {
+  opacity: 0;
+  transition: .3s;
+  transition-delay: .3s;
+}
+
+.portfolio-item:hover i {
+  opacity: 1;
+}
+
+/* Dropdown option */
+.collapse {
+  transition: all 0.4s ease-in-out;
+  opacity: 0;
+}
+
+.collapse.show {
+  opacity: 1;
+}
+
+#aboutContent {
+  transition: all 0.4s ease-in-out;
+  transform-origin: top;
+}
+
+#aboutContent.collapsing {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+#aboutContent.show {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+#skillsContent {
+  transition: all 0.4s ease-in-out;
+  transform-origin: top;
+}
+
+#skillsContent.collapsing {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+#skillsContent.show {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+#experienceContent {
+  transition: all 0.4s ease-in-out;
+  transform-origin: top;
+}
+
+#experienceContent.collapsing {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+#experienceContent.show {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+#servicesContent {
+  transition: all 0.4s ease-in-out;
+  transform-origin: top;
+}
+
+#servicesContent.collapsing {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+#servicesContent.show {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+#portfolioContent {
+  transition: all 0.4s ease-in-out;
+  transform-origin: top;
+}
+
+#portfolioContent.collapsing {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+#portfolioContent.show {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.btn:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* Add to style.css */
+.btn-link:active,
+.btn-link:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.btn-link i {
+  /* color: #00b87a; */
+  transition: color 0.2s ease;
+}
+
+.btn-link:hover i {
+  color: #008a5c !important; /* ~25% darker */
+}
+
+.btn-link:active i {
+  color: #008a5c !important; /* ~25% darker */
+}
+
+/* Light Mode Styles */
+body.light-mode {
+  --green: #00B87B;
+  --mediumgray: #495057 ;
+  --offwhite: #F8F9FA;
+  --lightgray: #E9ECEF;
+  --darkgray: #2C3E50  ;
+  background-color: var(--offwhite);
+  color: var(--darkgray);
+}
+
+body.light-mode .navbar {
+  background-color: var(--lightgray) !important;
+}
+
+body.light-mode .border-top {
+  border-top: 1px solid var(--green) !important;
+}
+
+body.light-mode .right-border {
+  border-right: 1px solid var(--green) !important;
+}
+
+body.light-mode .nav-button {
+  color: var(--green) !important;
+  flex: 1;
+  text-align: center;
+}
+
+body.light-mode .footer {
+  background-color: var(--lightgray) !important;
+}
+
+body.light-mode .name {
+  color: var(--green) !important;
+}
+
+body.light-mode .title {
+  color: var(--green) !important;
+}
+
+body.light-mode .title::before {
+  border-color: var(--green) !important;
+}
+
+body.light-mode .title::after {
+  background: var(--green) !important;
+}
+
+body.light-mode .typed-text-output {
+  color: var(--mediumgray) !important;
+}
+
+body.light-mode .box {
+  background-color: var(--green) !important;
+  color: var(--lightgray) !important;
+}
+
+body.light-mode .number {
+  color: var(--lightgray) !important;
+}
+
+body.light-mode .btn-link i {
+  color: var(--green) !important;
+}
+
+body.light-mode .btn-secondary {
+  background-color: var(--green) !important;
+  border-color: var(--green) !important;
+}
+
+body.light-mode .btn-square {
+  background-color: var(--green) !important;
+  border-color: var(--green) !important;
+}
+
+body.light-mode .course {
+  color: var(--green) !important;
+}
+
+body.light-mode .border-start {
+  border-left: 1px solid var(--green) !important;
+}
+
+body.light-mode .bi-arrow-right {
+  color: var(--green) !important;
+}
+
+body.light-mode .sy {
+  color: var(--darkgray) !important;
+}
+
+body.light-mode .desc {
+  color: var(--mediumgray) !important;
+}
+
+body.light-mode .service-item {
+  background-color: var(--green);
+}
+
+body.light-mode .service-title, body.light-mode .service-desc {
+  color: var(--lightgray);
+}
+
+body.light-mode .fa-2x {
+  color: var(--green);
+  background-color: var(--lightgray);
+}
+
+body.light-mode .service-item:hover {
+  background-color: var(--green);
+  color: var(--lightgray);
+}
+
+body.light-mode .service-item:hover .fa-2x {
+  color: var(--lightgray);
+  background-color: var(--green);
+}
+
+.dropdown.hamburger-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000; /* Ensure it appears above other content */
+}
+
+/* Default styles for desktop */
+@media (min-width: 992px) {
+  .dropdown.hamburger-menu .dropdown-menu {
+    left: 0;
+    right: auto;
+  }
+}
+
+/* Styles for mobile */
+@media (max-width: 991.8px) {
+  .dropdown.hamburger-menu .dropdown-menu {
+    left: auto;
+    right: 0;
+  }
+}
+
+.skills-item:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
