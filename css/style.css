@@ -298,6 +298,24 @@
   transform: scaleY(1);
 }
 
+#portfolio-flters li {
+  display: inline-block; /* or block */
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  z-index: 1; /* Ensure the button has a higher z-index */
+}
+
+#portfolio-flters li.active {
+  background-color: var(--dark); /* Example active state styling */
+  border-color: var(--dark); /* Example active state styling */ 
+  color: #fff;
+}
+
+#portfolio-flters li span, #portfolio-flters li i {
+  z-index: 0; /* Ensure the text/icon has a lower z-index */
+}
+
 .btn:focus {
   box-shadow: none !important;
   outline: none !important;
