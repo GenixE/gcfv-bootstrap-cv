@@ -133,9 +133,8 @@
     });
   });
 
-  // Select the themeToggle button and its text
+  // Select the themeToggle button
   const themeToggle = document.getElementById("themeToggle");
-  const themeText = themeToggle.querySelector(".theme-text");
 
   // Toggle theme on button click
   themeToggle.addEventListener("click", function () {
@@ -145,19 +144,17 @@
     document.body.classList.toggle("dark-mode", !isDarkMode);
     document.body.classList.toggle("light-mode", isDarkMode);
 
-    // Update the theme text and icon
-    updateThemeTextAndIcon(!isDarkMode);
+    // Update the theme icon
+    updateThemeIcon(!isDarkMode);
   });
 
-  // Function to update theme text and icon
-  function updateThemeTextAndIcon(isDarkMode) {
+  // Function to update theme icon
+  function updateThemeIcon(isDarkMode) {
     const icon = themeToggle.querySelector("i");
     if (isDarkMode) {
-      themeText.textContent = "Light Mode";
       icon.classList.remove("fa-moon");
       icon.classList.add("fa-sun");
     } else {
-      themeText.textContent = "Dark Mode";
       icon.classList.remove("fa-sun");
       icon.classList.add("fa-moon");
     }
@@ -169,14 +166,14 @@
 
   // Set initial theme based on system preference
   document.body.classList.add(systemPrefersDark ? "dark-mode" : "light-mode");
-  updateThemeTextAndIcon(systemPrefersDark);
+  updateThemeIcon(systemPrefersDark);
 
   // Listen for changes in system theme
   prefersDarkScheme.addEventListener("change", function (e) {
     const isDarkMode = e.matches;
     document.body.classList.toggle("dark-mode", isDarkMode);
     document.body.classList.toggle("light-mode", !isDarkMode);
-    updateThemeTextAndIcon(isDarkMode);
+    updateThemeIcon(isDarkMode);
   });
 
   document.addEventListener("DOMContentLoaded", function () {
@@ -224,4 +221,15 @@
   }
 
   setInterval(changeImage, 4000); // Adjusted interval to allow for transition
+
+    document.getElementById('languageToggle').addEventListener('click', function() {
+    var languageIcon = document.getElementById('languageIcon');
+    if (languageIcon.alt === 'English') {
+      languageIcon.src = 'img/es_flag_icon_round.webp'; // Change to Spanish flag icon
+      languageIcon.alt = 'Spanish';
+    } else {
+      languageIcon.src = 'img/en_flag_icon_round.webp'; // Change back to English flag icon
+      languageIcon.alt = 'English';
+    }
+  });
 })(jQuery);

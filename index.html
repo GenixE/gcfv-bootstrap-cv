@@ -50,24 +50,13 @@
       <div class="col-lg-4 sticky-lg-top vh-100">
         <div class="d-flex flex-column h-100 text-center overflow-auto shadow navbar">
           <img class="w-100 img-fluid mb-4" src="img/gcfv.webp" alt="Image" />
-          <div class="dropdown hamburger-menu">
-            <button class="btn btn-secondary btn-square" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="fas fa-bars"></i>
+          <div class="floating-options">
+            <button class="btn btn-secondary" id="languageToggle">
+              <img src="img/en_flag_icon_round.webp" alt="English" id="languageIcon" style="width: 20px; height: 20px;">
             </button>
-            <ul class="dropdown-menu">
-              <li>
-                <button class="dropdown-item" id="languageToggle">
-                  <i class="fas fa-language me-2"></i>
-                  <span class="language-text">ES/EN</span>
-                </button>
-              </li>
-              <li>
-                <button class="dropdown-item" id="themeToggle">
-                  <i class="fas fa-moon me-2"></i>
-                  <span class="theme-text">Dark Mode</span>
-                </button>
-              </li>
-            </ul>
+            <button class="btn btn-secondary" id="themeToggle">
+              <i class="fas fa-moon"></i>
+            </button>
           </div>
           <h1 class="text-primary mt-2 name">Gian Carlo Valencia Ferry</h1>
           <div class="mb-4" style="height: 22px">

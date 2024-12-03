@@ -24,21 +24,6 @@
   }
 }
 
-.hamburger-menu {
-  position: absolute;
-  top: 0;
-  margin: 1rem;
-  right: 0; /* Default to right for mobile */
-}
-
-@media (min-width: 992px) {
-  /* Adjust for larger screens */
-  .hamburger-menu {
-    left: 0;
-    right: auto;
-  }
-}
-
 .fw-semi-bold {
   font-weight: 600;
 }
@@ -444,29 +429,6 @@ body.light-mode .service-item:hover .fa-2x {
   background-color: var(--green);
 }
 
-.dropdown.hamburger-menu {
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 1000; /* Ensure it appears above other content */
-}
-
-/* Default styles for desktop */
-@media (min-width: 992px) {
-  .dropdown.hamburger-menu .dropdown-menu {
-    left: 0;
-    right: auto;
-  }
-}
-
-/* Styles for mobile */
-@media (max-width: 991.8px) {
-  .dropdown.hamburger-menu .dropdown-menu {
-    left: auto;
-    right: 0;
-  }
-}
-
 .skills-item:hover {
   transform: scale(1.05);
   transition: transform 0.3s ease;
@@ -498,4 +460,21 @@ body.light-mode .service-item:hover .fa-2x {
   margin-bottom: 10px;
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+.floating-options {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000; /* Ensure it appears above other content */
+}
+
+.floating-options .btn,
+.floating-options .theme-toggle-icon {
+  width: 50px; /* Set the desired size */
+  height: 50px; /* Set the same size to make it square */
 }
