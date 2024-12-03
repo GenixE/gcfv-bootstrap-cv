@@ -1,19 +1,19 @@
 :root {
-  --primary: #00B87B;
+  --primary: #00b87b;
   --secondary: #314355;
-  --light: #F2F2F2;
-  --dark: #2C3E50;
+  --light: #f2f2f2;
+  --dark: #2c3e50;
 }
 
 #spinner {
   opacity: 0;
   visibility: hidden;
-  transition: opacity .5s ease-out, visibility 0s linear .5s;
+  transition: opacity 0.5s ease-out, visibility 0s linear 0.5s;
   z-index: 99999;
 }
 
 #spinner.show {
-  transition: opacity .5s ease-out, visibility 0s linear 0s;
+  transition: opacity 0.5s ease-out, visibility 0s linear 0s;
   visibility: visible;
   opacity: 1;
 }
@@ -31,7 +31,8 @@
   right: 0; /* Default to right for mobile */
 }
 
-@media (min-width: 992px) { /* Adjust for larger screens */
+@media (min-width: 992px) {
+  /* Adjust for larger screens */
   .hamburger-menu {
     left: 0;
     right: auto;
@@ -71,7 +72,7 @@
 }
 
 .btn.btn-primary {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .typed-cursor {
@@ -175,7 +176,7 @@
   justify-content: center;
   background: var(--light);
   color: var(--primary);
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .service-item:hover i {
@@ -190,9 +191,9 @@
   top: 50%;
   left: 50%;
   font-size: 90px;
-  background: rgba(44, 62, 80, .9);
+  background: rgba(44, 62, 80, 0.9);
   opacity: 0;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .portfolio-item:hover .portfolio-btn {
@@ -205,8 +206,8 @@
 
 .portfolio-item i {
   opacity: 0;
-  transition: .3s;
-  transition-delay: .3s;
+  transition: 0.3s;
+  transition-delay: 0.3s;
 }
 
 .portfolio-item:hover i {
@@ -325,11 +326,11 @@
 
 /* Light Mode Styles */
 body.light-mode {
-  --green: #00B87B;
-  --mediumgray: #495057 ;
-  --offwhite: #F8F9FA;
-  --lightgray: #E9ECEF;
-  --darkgray: #2C3E50  ;
+  --green: #00b87b;
+  --mediumgray: #495057;
+  --offwhite: #f8f9fa;
+  --lightgray: #e9ecef;
+  --darkgray: #2c3e50;
   background-color: var(--offwhite);
   color: var(--darkgray);
 }
@@ -423,7 +424,8 @@ body.light-mode .service-item {
   background-color: var(--green);
 }
 
-body.light-mode .service-title, body.light-mode .service-desc {
+body.light-mode .service-title,
+body.light-mode .service-desc {
   color: var(--lightgray);
 }
 
@@ -476,6 +478,19 @@ body.light-mode .service-item:hover .fa-2x {
   object-fit: contain; /* Maintain aspect ratio */
   transition: opacity 0.5s ease-in-out;
   opacity: 0;
+}
+
+/* Adjust max-height for smaller screens */
+@media (max-width: 768px) {
+  #slideshow {
+    max-height: 180px; /* Adjust this value as needed */
+  } /* Adjust this value as needed */
+}
+
+@media (max-width: 480px) {
+  #slideshow {
+    max-height: 150px; /* Adjust this value as needed */
+  } /* Adjust this value as needed */
 }
 
 .project-name {
