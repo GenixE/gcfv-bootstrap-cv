@@ -416,7 +416,6 @@ body.light-mode .service-desc {
 
 body.light-mode .fa-2x {
   color: var(--green);
-  background-color: var(--lightgray);
 }
 
 body.light-mode .service-item:hover {
