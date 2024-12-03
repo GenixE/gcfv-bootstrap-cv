@@ -12,7 +12,7 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
   <!-- Favicon -->
-  <!-- <link href="img/favicon.ico" rel="icon" /> -->
+  <link href="img/favicon.svg" rel="icon" />
 
   <!-- Google Web Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -300,126 +300,161 @@
                       <li class="btn btn-secondary active" data-filter="*">
                         <i class="fa fa-star me-2"></i>All
                       </li>
-                      <li class="btn btn-secondary" data-filter=".first">
-                        <i class="fa fa-laptop-code me-2"></i>Front End
+                      <li class="btn btn-secondary" data-filter=".front-end">
+                        <i class="fa fa-code me-2"></i>Front End
                       </li>
-                      <li class="btn btn-secondary" data-filter=".second">
-                        <i class="fa fa-mobile-alt me-2"></i>Back End
+                      <li class="btn btn-secondary" data-filter=".back-end">
+                        <i class="fa fa-server me-2"></i>Back End
+                      </li>
+                      <li class="btn btn-secondary" data-filter=".full-stack">
+                        <i class="fa fa-server me-2"></i>Full Stack
+                      </li>
+                      <li class="btn btn-secondary" data-filter=".mobile">
+                        <i class="fa fa-server me-2"></i>Mobile
+                      </li>
+                      <li class="btn btn-secondary" data-filter=".design">
+                        <i class="fa fa-server me-2"></i>Design
                       </li>
                     </ul>
                   </div>
                 </div>
                 <!-- Portfolio grid remains the same -->
                 <div class="row portfolio-container">
-                  <div class="col-md-6 mb-4 portfolio-item first">
+                  <div class="col-md-6 mb-4 portfolio-item front-end mobile design">
+                    <h3 class="project-name">Bootstrap CV</h3>
                     <div class="position-relative overflow-hidden mb-2">
-                      <img class="img-fluid w-100" src="img/bootstrap-cv.webp" alt="bootstrap-cv" />
+                      <img id="slideshow" class="img-fluid w-100" src="img/bootstrap-cv-mac.webp" alt="bootstrap-cv" />
                       <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                        <a href="img/bootstrap-cv.webp" data-lightbox="portfolio">
-                          <i class="bi bi-plus text-light"></i>
+                        <a href="https://github.com/GenixE/gcfv-bootstrap-cv" target="_blank">
+                          <i class="fa fa-eye"></i>
                         </a>
                       </div>
                     </div>
                     <div class="row">
                       <div class="col-6 col-md-4 col-lg-4 col-xl-3">
                         <div class="skills-item text-center rounded p-4 h-100">
-                          <div class="text-primary text-center mb-3"><span class="fab fa-bootstrap fa-3x"></span></div>
+                          <div class="text-primary text-center mb-3">
+                            <span class="fab fa-bootstrap fa-3x" title="Bootstrap" data-bs-toggle="tooltip"
+                              data-bs-placement="top"></span>
+                          </div>
                         </div>
                       </div>
                       <div class="col-6 col-md-4 col-lg-4 col-xl-3">
                         <div class="skills-item text-center rounded p-4 h-100">
-                          <div class="text-primary text-center mb-3"><span class="fab fa-html5 fa-3x"></span></div>
+                          <div class="text-primary text-center mb-3">
+                            <span class="fab fa-html5 fa-3x" title="HTML5" data-bs-toggle="tooltip"
+                              data-bs-placement="top"></span>
+                          </div>
                         </div>
                       </div>
                       <div class="col-6 col-md-4 col-lg-4 col-xl-3">
                         <div class="skills-item text-center rounded p-4 h-100">
-                          <div class="text-primary text-center mb-3"><span class="fab fa-css3 fa-3x"></span></div>
+                          <div class="text-primary text-center mb-3">
+                            <span class="fab fa-css3 fa-3x" title="CSS3" data-bs-toggle="tooltip"
+                              data-bs-placement="top"></span>
+                          </div>
                         </div>
                       </div>
                       <div class="col-6 col-md-4 col-lg-4 col-xl-3">
                         <div class="skills-item text-center rounded p-4 h-100">
-                          <div class="text-primary text-center mb-3"><span class="fab fa-js-square fa-3x"></span></div>
+                          <div class="text-primary text-center mb-3">
+                            <span class="fab fa-js-square fa-3x" title="JavaScript" data-bs-toggle="tooltip"
+                              data-bs-placement="top"></span>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-6 mb-4 portfolio-item first">
+                  <div class="col-md-6 mb-4 portfolio-item full-stack back-end">
+                    <h3 class="project-name">PHP Dashboard</h3>
+                    <div class="position-relative overflow-hidden mb-2">
+                      <img class="img-fluid w-100" src="img/php-dashboard-mac.webp" alt="php-dashboard" />
+                      <div class="portfolio-btn d-flex align-items-center justify-content-center">
+                        <a href="https://github.com/GenixE/gcfv-php-dashboard" target="_blank">
+                          <i class="fa fa-eye"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6 col-md-4 col-lg-4 col-xl-3">
+                        <div class="skills-item text-center rounded p-4 h-100">
+                          <div class="text-primary text-center mb-3"><span class="fab fa-bootstrap fa-3x"
+                              title="Bootstrap" data-bs-toggle="tooltip" data-bs-placement="top"></span></div>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-4 col-lg-4 col-xl-3">
+                        <div class="skills-item text-center rounded p-4 h-100">
+                          <div class="text-primary text-center mb-3"><span class="fab fa-js-square fa-3x"
+                              title="JavaScript" data-bs-toggle="tooltip" data-bs-placement="top"></span></div>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-4 col-lg-4 col-xl-3">
+                        <div class="skills-item text-center rounded p-4 h-100">
+                          <div class="text-primary text-center mb-3"><span class="fab fa-php fa-3x" title="PHP"
+                              data-bs-toggle="tooltip" data-bs-placement="top"></span></div>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-4 col-lg-4 col-xl-3">
+                        <div class="skills-item text-center rounded p-4 h-100">
+                          <div class="text-primary text-center mb-3"><span class="fa-solid fa-database fa-3x"
+                              title="MySQL" data-bs-toggle="tooltip" data-bs-placement="top"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-4 portfolio-item front-end">
+                    <h3 class="project-name">Coming Soon</h3>
                     <div class="position-relative overflow-hidden mb-2">
                       <img class="img-fluid w-100" src="img/coming-soon.webp" alt="coming-soon" />
                       <div class="portfolio-btn d-flex align-items-center justify-content-center">
                         <a href="img/coming-soon.webp" data-lightbox="portfolio">
-                          <i class="bi bi-plus text-light"></i>
+                          <i class="fa fa-eye"></i>
                         </a>
                       </div>
                     </div>
                     <div class="row">
                       <div class="col-6 col-md-4 col-lg-4 col-xl-4">
                         <div class="skills-item text-center rounded p-4 h-100">
-                          <div class="text-primary text-center mb-3"><span class="fab fa-bootstrap fa-3x"></span></div>
+                          <div class="text-primary text-center mb-3"><span class="fab fa-bootstrap fa-3x"
+                              title="Bootstrap" data-bs-toggle="tooltip" data-bs-placement="top"></span></div>
                         </div>
                       </div>
                       <div class="col-6 col-md-4 col-lg-4 col-xl-4">
                         <div class="skills-item text-center rounded p-4 h-100">
-                          <div class="text-primary text-center mb-3"><span class="fab fa-react fa-3x"></span></div>
+                          <div class="text-primary text-center mb-3"><span class="fab fa-react fa-3x" title="React"
+                              data-bs-toggle="tooltip" data-bs-placement="top"></span></div>
                         </div>
                       </div>
                       <div class="col-6 col-md-4 col-lg-4 col-xl-4">
                         <div class="skills-item text-center rounded p-4 h-100">
-                          <div class="text-primary text-center mb-3"><span class="fab fa-js-square fa-3x"></span></div>
+                          <div class="text-primary text-center mb-3"><span class="fab fa-js-square fa-3x"
+                              title="JavaScript" data-bs-toggle="tooltip" data-bs-placement="top"></span></div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-6 mb-4 portfolio-item first">
+                  <div class="col-md-6 mb-4 portfolio-item front-end">
+                    <h3 class="project-name">React Netflix Cards</h3>
                     <div class="position-relative overflow-hidden mb-2">
                       <img class="img-fluid w-100" src="img/react-netflix.webp" alt="react-netflix" />
                       <div class="portfolio-btn d-flex align-items-center justify-content-center">
                         <a href="img/react-netflix.webp" data-lightbox="portfolio">
-                          <i class="bi bi-plus text-light"></i>
+                          <i class="fa fa-eye"></i>
                         </a>
                       </div>
                     </div>
                     <div class="row">
                       <div class="col-6 col-md-4 col-lg-4 col-xl-6">
                         <div class="skills-item text-center rounded p-4 h-100">
-                          <div class="text-primary text-center mb-3"><span class="fab fa-react fa-3x"></span></div>
+                          <div class="text-primary text-center mb-3"><span class="fab fa-react fa-3x" title="React"
+                              data-bs-toggle="tooltip" data-bs-placement="top"></span></div>
                         </div>
                       </div>
                       <div class="col-6 col-md-4 col-lg-4 col-xl-6">
                         <div class="skills-item text-center rounded p-4 h-100">
-                          <div class="text-primary text-center mb-3"><span class="fab fa-js-square fa-3x"></span></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6 mb-4 portfolio-item second">
-                    <div class="position-relative overflow-hidden mb-2">
-                      <img class="img-fluid w-100" src="img/php-dashboard-mac.webp" alt="php-dashboard" />
-                      <div class="portfolio-btn d-flex align-items-center justify-content-center">
-                        <a href="img/php-dashboard-mac.webp" data-lightbox="portfolio">
-                          <i class="bi bi-plus text-light"></i>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-6 col-md-4 col-lg-4 col-xl-3">
-                        <div class="skills-item text-center rounded p-4 h-100">
-                          <div class="text-primary text-center mb-3"><span class="fab fa-bootstrap fa-3x"></span></div>
-                        </div>
-                      </div>
-                      <div class="col-6 col-md-4 col-lg-4 col-xl-3">
-                        <div class="skills-item text-center rounded p-4 h-100">
-                          <div class="text-primary text-center mb-3"><span class="fab fa-js-square fa-3x"></span></div>
-                        </div>
-                      </div>
-                      <div class="col-6 col-md-4 col-lg-4 col-xl-3">
-                        <div class="skills-item text-center rounded p-4 h-100">
-                          <div class="text-primary text-center mb-3"><span class="fab fa-php fa-3x"></span></div>
-                        </div>
-                      </div>
-                      <div class="col-6 col-md-4 col-lg-4 col-xl-3">
-                        <div class="skills-item text-center rounded p-4 h-100">
-                          <div class="text-primary text-center mb-3"><span class="fa-solid fa-database fa-3x"></span></div>
+                          <div class="text-primary text-center mb-3"><span class="fab fa-js-square fa-3x"
+                              title="JavaScript" data-bs-toggle="tooltip" data-bs-placement="top"></span></div>
                         </div>
                       </div>
                     </div>
@@ -607,20 +642,20 @@
                 <div class="skill mb-4">
                   <div class="d-flex justify-content-between">
                     <p class="mb-2">Ilocano</p>
-                    <p class="mb-2">40%</p>
+                    <p class="mb-2">45%</p>
                   </div>
                   <div class="progress">
-                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="45" aria-valuemin="0"
                       aria-valuemax="100"></div>
                   </div>
                 </div>
                 <div class="skill mb-4">
                   <div class="d-flex justify-content-between">
                     <p class="mb-2">Catalan</p>
-                    <p class="mb-2">30%</p>
+                    <p class="mb-2">40%</p>
                   </div>
                   <div class="progress">
-                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="30" aria-valuemin="0"
+                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="40" aria-valuemin="0"
                       aria-valuemax="100"></div>
                   </div>
                 </div>

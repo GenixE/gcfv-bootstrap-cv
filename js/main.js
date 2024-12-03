@@ -198,4 +198,30 @@
       });
     });
   });
+
+  // Tooltip
+  document.addEventListener("DOMContentLoaded", function () {
+    var tooltipTriggerList = [].slice.call(
+      document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    );
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+  });
+
+  const images = ["img/bootstrap-cv-mac.webp", "img/bootstrap-cv-iphone.webp"];
+  let currentIndex = 0;
+
+  function changeImage() {
+    const imgElement = document.getElementById("slideshow");
+    imgElement.style.opacity = 0; // Start fading out
+
+    setTimeout(() => {
+      currentIndex = (currentIndex + 1) % images.length;
+      imgElement.src = images[currentIndex];
+      imgElement.style.opacity = 1; // Fade in the new image
+    }, 500); // Match this duration with the CSS transition duration
+  }
+
+  setInterval(changeImage, 4000); // Adjusted interval to allow for transition
 })(jQuery);
