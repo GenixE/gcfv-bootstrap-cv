@@ -463,7 +463,7 @@ body.light-mode .service-item:hover .fa-2x {
 
 .floating-options {
   position: fixed;
-  top: 50%;
+  top: 75%;
   right: 20px;
   transform: translateY(-50%);
   display: flex;
@@ -472,8 +472,27 @@ body.light-mode .service-item:hover .fa-2x {
   z-index: 1000; /* Ensure it appears above other content */
 }
 
-.floating-options .btn,
-.floating-options .theme-toggle-icon {
+.floating-options .floating-btn {
   width: 50px; /* Set the desired size */
   height: 50px; /* Set the same size to make it square */
+  border-radius: 50%; /* Make the buttons circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.floating-options .floating-btn:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.floating-options .floating-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+.floating-options .floating-btn i {
+  font-size: 20px;
 }
